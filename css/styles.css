@@ -112,7 +112,7 @@ blockquote p.name { font-style:normal; color:#555; letter-spacing:0; font-weight
 /* =4. Headings
 --------------------------------------------------------------------------------------------------------*/
 h1#logo { display:block; position:relative; margin:0; margin-top:20px; margin-bottom:50px; text-align:center; font-size:0; }
-h1#logo a { display:inline-block; background:url(../images/bg-logo2%402x.png) center no-repeat; background-size:394px 87px; width:394px; height:87px; text-indent:-9999px; }
+h1#logo a { display:inline-block; text-indent:-9999px; }
 .tagline { float:left; font-size:12px; font-weight:400; padding:0 0 0 16px; margin:0px auto; position:relative; display:table; height:72px; margin-top:-1px; font-style:italic }
 .tagline span { vertical-align:middle; display:table-cell }
 .year, h1, h2, h3, h4, h5, h6 { line-height:1.3; color:#2b2b2b; position:relative; font-family:"Oswald", Arial, Helvetica, sans-serif; text-transform:uppercase; }
@@ -492,3 +492,63 @@ input.last { margin-right:0 !important }
 .comment-form .send-btn:hover { background:rgba(0,0,0,0.1); color:#2b2b2b}
 /* End Blog
 --------------------------------------------------------------------------------------------------------*/
+h1#logo {
+    width: 100%;
+    text-align: center;
+}
+#logo > a > img {
+    width: 72px;
+    float: none;
+}
+#logo a {
+text-align:center;
+}
+#logo > a > span {
+    color: #000;
+    float: left;
+    width: 200px;
+}
+div#logo-header {
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 5px;
+}
+div#logo-header a {
+    font-size: 35px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: green;
+    font-weight: bold;
+	text-shadow: -1px 1px 1px #f00;
+}
+p.small.login {
+    font-size: 25px !important;
+    color: #fff !important;
+}
+span#message.error {
+    background: #f00;
+    margin: 5px 0;
+    padding: 2px 10px;
+    color: #fff;
+    float: left;
+}
+span#message.success {
+    background: green;
+    margin: 5px 0;
+    padding: 2px 10px;
+    color: #fff;
+    float: left;
+}
+input#login-btn {
+    background: #fff;
+    color: #000;
+    padding: 5px 10px !important;
+    float: right;
+    margin-top: 10px;
+    width: 100px !important;
+}
+input#login-btn:hover {
+    background: #ddd;
+}
